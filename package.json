@@ -10,6 +10,9 @@
     "babel-polyfill": "^6.23.0",
     "babel-runtime": "^6.23.0",
     "body-parser": "~1.13.2",
+    "cldr": "^4.3.0",
+    "cldr-core": "^31.0.1",
+    "cldr-misc-full": "^31.0.1",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
@@ -19,6 +22,8 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
