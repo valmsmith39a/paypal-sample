@@ -11,7 +11,7 @@ import reducers from "./reducers/index";
 const mountNode = document.getElementById("app");
 
 ReactDOM.render(
-  <Provider store={createStore(reducers, applyMiddleware(thunk))}>
+  <Provider store={createStore(reducers, applyMiddleware(promise))}>
     <App />
   </Provider>,
   mountNode
