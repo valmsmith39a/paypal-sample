@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getLocales } from "../actions/locales";
+import { getLocales, resolveLocales } from "../actions/locales";
 
 class PropertyInput extends React.Component {
 
@@ -8,6 +8,7 @@ class PropertyInput extends React.Component {
     this.props.getLocales({ propertyInput:this.refs.propertyInput.value})
       .then(response => {
         console.log("response is ", response);
+        this.props.resolveLocales(response.payload.data);
       });
   }
 
@@ -28,4 +29,8 @@ class PropertyInput extends React.Component {
   }
 };
 
-export default connect(null, { getLocales })(PropertyInput);
+function mapStateToProps(state) {
+  return state;
+}
+
+export default connect(mapStateToProps, { getLocales, resolveLocales })(PropertyInput);

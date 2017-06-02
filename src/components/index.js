@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropertyInput from "./property-input";
+import PropertyInput from "./propertyInput";
+import { connect } from "react-redux";
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -12,3 +13,9 @@ export default class App extends React.Component {
     );
   }
 }
+
+function mapStateToProps (state) {
+  return state;
+}
+
+export default connect(mapStateToProps, null)(App);
