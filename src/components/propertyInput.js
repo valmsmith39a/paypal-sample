@@ -7,7 +7,6 @@ class PropertyInput extends React.Component {
   handleClick() {
     this.props.getLocales({ propertyInput:this.refs.propertyInput.value})
       .then(response => {
-        console.log("response is ", response);
         this.props.resolveLocales(response.payload.data);
       });
   }
