@@ -8,7 +8,7 @@ class PropertyInput extends React.Component {
     this.props.getLocales({ propertyInput:this.refs.propertyInput.value})
       .then(response => {
         console.log("response is ", response);
-      })
+      });
   }
 
   render() {

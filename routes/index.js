@@ -1,24 +1,19 @@
 var express = require('express');
-var cldrData = require('cldr');
+var getDelimitersData = require("../helpers/getDelimitersData");
+var filterDelimitersDataByProperty = require("../helpers/filterDelimitersData");
 
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // console.log("hello in get route of server");
-  // console.log("what is cldr data", cldrData);
-  // console.log("example data: ", cldrData.extractDelimiters(cldrData.localeIds[3]));
-  // console.log("test other file ", cldrData.localeIds[3]);
-  // for (var i = 0; i < 200; i++) {
-  //   console.log("i is ", i);
-  //   console.log("language is ", cldrData.localeIds[i]);
-  //   console.log("delimiter data is: ", cldrData.extractDelimiters(cldrData.localeIds[i]));
-  // }
   res.render('index', { title: 'Express' });
 });
 
+/* Return locales data based on user's property input */
 router.post("/locales", function(req, res, next) {
-  res.send(req.body);
-})
+  const property = req.body.propertyInput;
+  const filteredDelimitersData = filterDelimitersDataByProperty(property);
+  res.send(filteredDelimitersData);
+});
 
 module.exports = router;
