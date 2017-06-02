@@ -1,14 +1,9 @@
 import React from "react";
-import { connect } from "react-redux";
-import { getLocales, resolveLocales } from "../actions/locales";
 
 class PropertyInput extends React.Component {
 
-  handleClick() {
-    this.props.getLocales({ propertyInput:this.refs.propertyInput.value})
-      .then(response => {
-        this.props.resolveLocales(response.payload.data);
-      });
+  _handleClick() {
+    this.props.handlePropertyInputClick({propertyInput:this.refs.propertyInput.value});
   }
 
   render() {
@@ -19,7 +14,7 @@ class PropertyInput extends React.Component {
           className="property-input" ref="propertyInput"
         />
         <button
-          onClick={this.handleClick.bind(this)}
+          onClick={this._handleClick.bind(this)}
         >
           Get Locales
         </button>
@@ -28,8 +23,4 @@ class PropertyInput extends React.Component {
   }
 };
 
-function mapStateToProps(state) {
-  return state;
-}
-
-export default connect(mapStateToProps, { getLocales, resolveLocales })(PropertyInput);
+export default PropertyInput;
