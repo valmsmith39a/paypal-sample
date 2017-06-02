@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { getLocales, resolveLocales } from "../actions/locales";
 
 class App extends React.Component {
+
   _handlePropertyInputClick(propertyInputObj) {
     this.props.getLocales(propertyInputObj)
       .then(response => {
