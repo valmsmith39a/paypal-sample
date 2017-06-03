@@ -8,6 +8,9 @@ import promise from "redux-promise";
 import App from "./components/index";
 import reducers from "./reducers/index";
 
+require("./style/style.scss");
+import BootStrap from "react-bootstrap";
+
 const mountNode = document.getElementById("app");
 
 ReactDOM.render(

@@ -11,6 +11,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-runtime": "^6.23.0",
     "body-parser": "~1.13.2",
+    "bootstrap": "^3.3.7",
     "cldr": "^4.3.0",
     "cldr-core": "^31.0.1",
     "cldr-misc-full": "^31.0.1",
@@ -21,6 +22,7 @@
     "lodash": "^4.17.4",
     "morgan": "~1.6.1",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
@@ -34,6 +36,10 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
     "webpack": "^2.6.1"
   }
 }

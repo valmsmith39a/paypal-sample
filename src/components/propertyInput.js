@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 class PropertyInput extends React.Component {
 
@@ -8,16 +9,20 @@ class PropertyInput extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>Enter Property</span>
+      <div className="property-input-wrapper">
         <input
-          className="property-input" ref="propertyInput"
+          className="property-input"
+          ref="propertyInput"
+          placeholder="Enter a property Ex. quotationStart, quotationEnd"
         />
-        <button
+        <Button
+          className="get-locales-button"
+          bsSize="small"
+          bsStyle="primary"
           onClick={this._handleClick.bind(this)}
         >
           Get Locales
-        </button>
+        </Button>
       </div>
     );
   }

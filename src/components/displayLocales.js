@@ -9,10 +9,10 @@ const DisplayLocales = ({ locales, property }) => {
             // Ex. quotationStart or quotationEnd etc.
             const delimiterKey = Object.keys(item)[0];
             return (
-              <li key={index}>
+              <div key={index}>
                 <span> {index} </span>
                 {item[delimiterKey]}
-              </li>
+              </div>
             );
           })
         }

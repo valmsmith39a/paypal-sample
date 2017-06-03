@@ -16,8 +16,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        React App
+      <div className="app-delimiters">
+        <div className="app-title">Delimiters Galore</div>
+        <div className="input-title"></div>
         <PropertyInput
           handlePropertyInputClick={this._handlePropertyInputClick.bind(this)}
         />

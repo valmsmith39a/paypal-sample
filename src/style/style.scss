@@ -1,0 +1,21 @@
+.app-delimiters {
+
+  .app-title {
+    margin-left: 20px;
+
+    color: red;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .property-input-wrapper {
+    margin-left: 20px;
+
+    .property-input {
+      width: 419px;
+      height: 33px;
+      margin-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}

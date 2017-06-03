@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const GET_LOCALES = "GET_LOCALES";
-export const RESOLVE_LOCALES = "RESOLVE_LOCALES";
+export const RESOLVE_GET_LOCALES = "RESOLVE_GET_LOCALES";
 
 const GET_LOCALES_URL = "/locales";
 
@@ -15,7 +15,7 @@ export function getLocales(propertyInput) {
 
 export function resolveLocales(locales) {
   return {
-    type: "RESOLVE_GET_LOCALES",
+    type: RESOLVE_GET_LOCALES,
     payload: locales
   }
 }
