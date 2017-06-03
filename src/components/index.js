@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import PropertyInput from "./propertyInput";
 import DisplayLocales from "./displayLocales";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { getLocales, resolveLocales } from "../actions/locales";
 
 class App extends React.Component {
@@ -24,7 +25,10 @@ class App extends React.Component {
     return (
       <div className="app-delimiters">
         <div className="app-title">Delimiters Galore</div>
-        <div className="input-title"></div>
+        <div className="nav-links">
+          <Link className="home-link" to={`/`}>Home</Link>
+          <Link className="contact-link" to={`/contact`}>Contact Info</Link>
+        </div>
         <PropertyInput
           handlePropertyInputClick={this._handlePropertyInputClick.bind(this)}
         />
