@@ -6,10 +6,16 @@ import { connect } from "react-redux";
 import { getLocales, resolveLocales } from "../actions/locales";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { propertyInput: ""};
+  }
 
   _handlePropertyInputClick(propertyInputObj) {
     this.props.getLocales(propertyInputObj)
       .then(response => {
+        this.setState({propertyInput: propertyInputObj.propertyInput})
         this.props.resolveLocales(response.payload.data);
       });
   }
@@ -24,6 +30,7 @@ class App extends React.Component {
         />
         <DisplayLocales
           locales={this.props.locales}
+          propertyInput={this.state.propertyInput}
         />
       </div>
     );

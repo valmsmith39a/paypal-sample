@@ -8,12 +8,13 @@ class PropertyInput extends React.Component {
   }
 
   render() {
+    const placeHolderText = "Enter a property. Ex. quotationStart, quotationEnd";
     return (
       <div className="property-input-wrapper">
         <input
           className="property-input"
           ref="propertyInput"
-          placeholder="Enter a property Ex. quotationStart, quotationEnd"
+          placeholder={placeHolderText}
         />
         <Button
           className="get-locales-button"
