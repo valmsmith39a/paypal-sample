@@ -8,14 +8,6 @@
     font-weight: 700;
   }
 
-  .nav-links {
-    margin-left: 20px;
-
-    .home-link {
-      margin-right: 10px;
-    }
-  }
-
   .property-input-wrapper {
     margin-left: 20px;
 
@@ -42,6 +34,13 @@
 }
 
 .contact-info {
-  margin-left: 800px;
-  margin-top: -160px;
+  text-align:center;
+}
+
+.nav-links {
+  margin-left: 20px;
+
+  .home-link {
+    margin-right: 10px;
+  }
 }
