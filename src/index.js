@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import promise from "redux-promise";
@@ -15,9 +15,9 @@ const mountNode = document.getElementById("app");
 
 ReactDOM.render(
   <Provider store={createStore(reducers, applyMiddleware(promise))}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
   mountNode
 );
