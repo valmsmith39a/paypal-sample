@@ -14,4 +14,4 @@
 
 - Problem with this approach is that I'm not able to provide the name of each locale in the final list - I've simply numbered them instead.
 
-- Implementation of React Router to display contact info basically works, but does not switch out existing component, as one would expect. There's also a bug where upon refresh in `/contact` route, I get a 404 error. Investigating why this is happening. 
+- React router set up to render delimiter input/display and contact info components when click on related nav links. But bug upon refresh in `/contact` route, I get a 404 error. Investigating why this is happening. 
