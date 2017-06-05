@@ -6,7 +6,7 @@
 ##### (3) URL: http://localhost:3000/
 
 ### Notes:
-- End result when enter 'quotationStart' and click on `Get Locales` should look like this: https://prnt.sc/ffb8cy (I've encountered a slight lag of about 20 seconds or so before results display).
+- End result when enter 'quotationStart' and click on `Get Locales` should look like this: http://prntscr.com/ffz9sc (I've encountered a slight lag of about 20 seconds or so before results display).
 
 - Used cldr package: https://www.npmjs.com/package/cldr and `extractDelimiters` function (https://www.npmjs.com/package/cldr#cldrextractdelimiterslocaleidroot) which gets the delimiters object for a specified locale.
 
